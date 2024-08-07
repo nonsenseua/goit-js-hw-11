@@ -6,7 +6,7 @@ export function searchImages(query) {
     q: query,
     image_type: 'photo',
     orientation: 'horizontal',
-    safesearch: 'false',
+    safesearch: 'true',
   });
 
   return fetch(`${URL}?${searchParams}`).then(response => {
